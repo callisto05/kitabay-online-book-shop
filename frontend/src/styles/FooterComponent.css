@@ -1,0 +1,49 @@
+/* FooterComponent.css */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-social,
+.footer-policies {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-social h5,
+.footer-policies h5 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.footer-policies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-policies ul li {
+  margin-bottom: 10px;
+}
+
+.footer-policies ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-policies ul li a:hover {
+  color: #2e13fc;
+}

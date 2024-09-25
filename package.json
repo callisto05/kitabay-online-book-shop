@@ -1,0 +1,17 @@
+{
+  "name": "kitabay",
+  "version": "1.0.0",
+  "description": "Book selling website",
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "server": "cd backend && node src/app.js",
+    "dev": "concurrently \"npm run start\" \"npm run server\""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

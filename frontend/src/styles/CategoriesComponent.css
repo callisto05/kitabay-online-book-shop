@@ -1,0 +1,20 @@
+/* CategoriesComponent.css */
+.categories-container {
+  padding: 20px;
+}
+
+.category-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-image {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.category-title {
+  margin-top: 10px;
+  font-size: 1em;
+}

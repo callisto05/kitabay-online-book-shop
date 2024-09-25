@@ -1,0 +1,18 @@
+.navbar-brand {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.navbar-icon {
+  font-size: 1.2em; /* Adjust the size as needed */
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1em;
+  }
+
+  .navbar-icon {
+    font-size: 1em;
+  }
+}

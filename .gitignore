@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Ignore node_modules in all subdirectories
+**/node_modules/
+
+# Ignore build output in all subdirectories
+**/build/
+
+# Ignore environment variables in all subdirectories
+**/.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore specific files in frontend
+frontend/.prettierrc
+frontend/.eslintrc.json

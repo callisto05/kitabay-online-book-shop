@@ -1,0 +1,73 @@
+.book-item {
+  width: 200px; /* Set a fixed width for the card */
+  height: 400px; /* Increase the height to accommodate the buttons */
+  margin: 10px; /* Add some margin for spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Add transition for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add initial shadow */
+}
+
+.book-item:hover {
+  transform: translateY(-10px); /* Move the card up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.book-cover {
+  width: 100%; /* Make the image take the full width of the card */
+  height: 250px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.book-title {
+  font-size: 1em; /* Reduce the font size for the title */
+  font-weight: bold; /* Make the title bold */
+  margin-bottom: 5px; /* Reduce the space below the title */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+.book-author {
+  font-size: 0.9em; /* Reduce the font size for the author */
+  color: #555; /* Set a color for the author text */
+  margin-bottom: 5px; /* Reduce the space below the author */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}
+
+.book-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0; /* Remove padding from the buttons container */
+  border-top: 1px solid #e7e7e7; /* Add a top border to separate buttons from content */
+}
+
+.add-to-cart-btn,
+.add-to-favorite-btn {
+  font-size: 0.8em; /* Reduce the font size of the buttons */
+  padding: 10px 0; /* Adjust padding for the buttons */
+  flex: 1; /* Allow buttons to take equal space */
+  margin: 0; /* Remove margin between buttons */
+  border-radius: 0; /* Remove border radius */
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease; /* Add transition for hover effect */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e7b900; /* Change background color on hover */
+}
+
+.add-to-favorite-btn {
+  color: grey; /* Set the initial color of the heart emoji to grey */
+}
+
+.add-to-favorite-btn:hover {
+  background-color: #f8f9fa; /* Change background color on hover */
+  color: red; /* Change the color of the heart emoji to red on hover */
+}
