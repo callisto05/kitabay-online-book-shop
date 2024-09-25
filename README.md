@@ -10,7 +10,7 @@ The backend directory contains the server-side code for the application.
 
 To install the dependencies, navigate to the `backend` directory and run the following command:
 
-```
+```sh
 npm install
 ```
 
@@ -18,7 +18,7 @@ npm install
 
 To start the backend server, run the following command:
 
-```
+```sh
 npm start
 ```
 
@@ -39,7 +39,7 @@ The frontend directory contains the client-side code for the application.
 
 To install the dependencies, navigate to the `frontend` directory and run the following command:
 
-```
+```sh
 npm install
 ```
 
@@ -47,23 +47,41 @@ npm install
 
 To start the frontend development server, run the following command:
 
-```
+```sh
 npm start
 ```
 
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+
 ### Files
 
-- `src/components/HomeComponent.js`: Component that includes a React-Bootstrap navbar with navigation options on the left side after the branding.
-- `src/App.js`: Entry point of the frontend application. Renders the HomeComponent component.
-- `src/index.js`: Entry point for the frontend application. Renders the App component and mounts it to the DOM.
-- `src/styles/App.css`: CSS styles for the App component.
-- `public/index.html`: HTML template for the frontend application.
-- `public/favicon.ico`: Favicon for the frontend application.
-- `package.json`: Configuration file for npm. Lists the dependencies and scripts for the frontend application.
+This directory contains the frontend application for the Kitabay book selling website.
 
 ## Project Structure
 
-```
+The project has the following files and directories:
+
+- `src/components/`: Contains the React components used in the application.
+  - `BookComponent.js`: Component for displaying individual book details.
+  - `CategoriesComponent.js`: Component for displaying book categories.
+  - `CategoryPage.js`: Component for displaying books in a specific category.
+  - `FooterComponent.js`: Component for the footer section of the application.
+  - `HomeComponent.js`: Component for the home page.
+  - `...`: Other components.
+- `src/assets/images/`: Contains image assets used in the application.
+- `src/styles/`: Contains CSS files for styling the application.
+- `src/App.js`: The main application component.
+- `src/index.js`: The entry point for the frontend application. It renders the `App` component and mounts it to the DOM.
+- `public/index.html`: The HTML template for the frontend application.
+- `public/favicon.ico`: The favicon for the frontend application.
+- `.prettierrc`: Configuration file for Prettier.
+- `.eslintrc.json`: Configuration file for ESLint.
+- `package.json`: Configuration file for npm in the frontend directory. It lists the dependencies and scripts for the frontend application.
+- `README.md`: This file.
+
+## Project Structure
+
+```plaintext
 kitabay
 ├── backend
 │   ├── src
@@ -81,11 +99,17 @@ kitabay
 ├── frontend
 │   ├── src
 │   │   ├── components
+│   │   │   ├── BookComponent.js
+│   │   │   ├── CategoriesComponent.js
+│   │   │   ├── CategoryPage.js
+│   │   │   ├── FooterComponent.js
 │   │   │   └── HomeComponent.js
+│   │   ├── assets
+│   │   │   └── images
+│   │   ├── styles
+│   │   │   └── App.css
 │   │   ├── App.js
-│   │   ├── index.js
-│   │   └── styles
-│   │       └── App.css
+│   │   └── index.js
 │   ├── public
 │   │   ├── index.html
 │   │   └── favicon.ico
@@ -96,6 +120,5 @@ kitabay
 ```
 
 For more information, please refer to the individual README files in the `backend` and `frontend` directories.
-```
 
 Please note that the above contents are just a template and you may need to modify them based on your specific project requirements.
